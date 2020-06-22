@@ -1,0 +1,117 @@
+/*comon styles*/
+body{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+section{
+    padding: 3em 0;
+}
+header{
+    padding-bottom: 2em;
+}
+
+header h1{
+    font-size: 1.62em;
+    font-weight: 900;
+    padding: 0.5em 0;
+
+}
+header p{
+    color: #777;
+}
+img{
+    width: 100%;
+}
+.row-3>*{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+.text-center{
+    text-align: center;
+    
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media (max-width: 1220px){
+    .container{
+        width: 800px;
+    }
+}
+
+/*features specific styles*/
+.features img{
+    transform-origin: top;
+    transform: scale(0.85);
+}
+.features h2{
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1em 1.9em;
+    position: relative;
+}
+.features p{
+    color: #777;
+}
+.features i{
+    position: absolute;
+}
+.features .right-icon i{
+    top: 2.5em;
+    left: 21.5em;
+    
+    
+}
+.features .left-icon i{
+    top: 2em;
+    right: 21.5em;
+}
+.features p{
+    line-height: 1.2em;
+    padding: 1em 1.5em;
+}
+/*features adaptive style*/
+@media (max-width: 1220px){
+    .features .row-3>*{
+        width: 49%;
+
+    }
+    .features figure{
+        display: none;
+    }
+    .features h2{
+        padding: 1em 3em;
+    }
+    .features p{
+        padding: 1em 2.5em;
+    }
+}
+@media (max-width: 900px){
+    .features .row-3>*{
+         width: 100%;
+    }
+    .features figure{
+        display: none;
+    }
+    .features h2{
+        text-align: left;
+    }
+    .features p{
+        text-align: left;
+    }
+    .features .left-icon i,
+    .features .right-icon i{
+        top: 2.5em;
+        left: 1em;
+    }
+}
